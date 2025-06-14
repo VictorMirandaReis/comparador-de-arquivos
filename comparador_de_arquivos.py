@@ -2,10 +2,12 @@ def ler_arquivo(arquivo):
     with open(arquivo, 'r') as arquivo:
         return [linha.strip() for linha in arquivo.readlines()]
 
+
 def escrever_arquivo(arquivo, linha):
     with open(arquivo, 'w') as arquivo:
         for linha in linha:
             arquivo.write(f"{linha}\n")
+
 
 arquivo_a_ = ler_arquivo('arquivo_a_.txt')
 arquivo_b_ = ler_arquivo('arquivo_b_.txt')
